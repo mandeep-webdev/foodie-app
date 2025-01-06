@@ -11,7 +11,6 @@ const MainHeader = () => {
       {/* Logo */}
       <Link href="/" className={style.logo}>
         <Image src={logo} alt="food-image" priority />
-        {/* <img src={logo.src} alt="logo of food image" /> */}
         Recipedia
       </Link>
       {/* Navigation */}
@@ -19,24 +18,10 @@ const MainHeader = () => {
         <ul>
           <li>
             <NavLinks href="/meals"> Browse Meals</NavLinks>
-            {/* <Link
-              href="/meals"
-              className={path.startsWith("/meals") ? style.active : undefined}
-            >
-              Browse Meals
-            </Link> */}
           </li>
-          {/* <li>
-            <Link href="meals/share">Share Meal</Link>
-          </li> */}
+
           <li>
             <NavLinks href="/community"> Foodies Community</NavLinks>
-            {/* <Link
-              href="/community"
-              className={path === "/community" ? style.active : undefined}
-            >
-              Foodies Community
-            </Link> */}
           </li>
         </ul>
       </nav>
